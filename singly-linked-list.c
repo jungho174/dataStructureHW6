@@ -221,6 +221,13 @@ int deleteFirst(headNode* h) {
  */
 int deleteNode(headNode* h, int key) {
 
+	listNode* temp = (listNode*)malloc(sizeof(listNode));
+	temp = *h;
+
+	while(temp != NULL) {
+		
+	}
+
 	return 0;
 
 }
