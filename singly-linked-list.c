@@ -43,6 +43,7 @@ int main()
 	int key;
 	headNode* headnode=NULL;
 
+	printf("[----- [조정호] [2020039032] -----]");
 	do{
 		printf("----------------------------------------------------------------\n");
 		printf("                     Singly Linked List                         \n");
@@ -207,8 +208,8 @@ int deleteFirst(headNode* h) {
 
 	listNode* temp = (listNode*)malloc(sizeof(listNode));
 
-	temp = *h;
-	*h = *h->first->link;
+	temp = h;
+	h = h->first->link;
 
 	free(temp);
 
@@ -222,10 +223,10 @@ int deleteFirst(headNode* h) {
 int deleteNode(headNode* h, int key) {
 
 	listNode* temp = (listNode*)malloc(sizeof(listNode));
-	temp = *h;
+	temp = h;
 
 	while(temp != NULL) {
-		
+
 	}
 
 	return 0;
