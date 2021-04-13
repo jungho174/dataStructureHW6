@@ -205,7 +205,12 @@ int insertLast(headNode* h, int key) {
  */
 int deleteFirst(headNode* h) {
 
+	listNode* temp = (listNode*)malloc(sizeof(listNode));
 
+	temp = *h;
+	*h = *h->first->link;
+
+	free(temp);
 
 	return 0;
 }
